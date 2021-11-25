@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+      html, body {
+          height: 100%;
+      }
+      .bg-fruit {
+          background-image: url("fruit.png"); 
+    }
+  </style>
+  <title>Login Form</title> 
+</head>
+<body>
+    <!--container for everything fruit-header-picture!--> 
+    <div class="bg-fruit h-full bg-gray-200 p-12 flex items-start justify-center">
+        
+         <!--first-parent-div-->
+        <div class="bg-white rounded w-96 p-8 flex flex-col space-y-4 items-center shadow-lg">
+            <div class="text-2xl">Login</div>
+            
+            <!--second-child-username-div-->
+            <div class="space-y-2 px-6"> 
+                <input class="w-full bg-white border border-gray-300 rounded p-2 text-center placeholder-gray-300 text-pink-500 focus:border-pink-500 outline-none" placeholder="Username">
+                <!--end-second-child-username-div--> 
+
+                <!--third-password-div-->
+                <input type="password" class="w-full bg-white border border-gray-300  rounded p-2 text-center placeholder-gray-300 text-pink-500 focus:border-pink-500 outline-none" placeholder="Password">
+            </div> 
+            <!--end-third-password-div-->
+        
+            <!--forth-login-div-->
+            <button class="bg-gray-600 text-white border border-gray-300 rounded p-1 self-end px-5 text-sm">Login</button>
+            <!--end-forth-login-div-->
+        </div> 
+        <!--end-first-parent-div-->
+
+    <!--end container for everything - fruit-header-picture-->
+    </div>
+
+</body>
+</html> 
